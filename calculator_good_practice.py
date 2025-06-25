@@ -13,6 +13,10 @@ class Calculator:
         """Returns the product of two numbers"""
         return a * b
 
+    def divide(self, a, b):
+        """Returns the quotient of two numbers"""
+        return a / b
+
 
 
 
