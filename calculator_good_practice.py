@@ -22,14 +22,20 @@ class Calculator:
 
     def main():
         """Collect user input and return numbers and operation."""
-        calc = Calculator()
+        calc = Calculator() # Create a Calculator instance
+        
+        # Displays operation choices to the user
         print("Simple Calculator")
         print("1. Add\n2. Subtract\n3. Multiply\n4. Divide")
+
+        # Get user's operation choice
         choice = input("Enter your choice: ")
 
+        # Prompt user for two numeric inputs
         a = float(input("Enter first number: "))
         b = float(input("Enter second number: "))
 
+        # Map choices to corresponding Calculator methods
         operations = {
             "1": calc.add,
             "2": calc.subtract,
